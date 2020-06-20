@@ -84,7 +84,7 @@ transition: 1s ease;
 
 
 
-	window.onresize = resize;
+		window.onresize = resize;
 	function resize()
 	  {
 		var x = document.getElementById("Mobile1");
@@ -95,12 +95,18 @@ transition: 1s ease;
 		  document.getElementById("fx1").style.marginTop = "70px";
 		  document.getElementById("Mobile2").style.display = "inline-block";
 		  document.getElementById("Laptop2").style.display = "none";
+
+		  document.getElementById("Logo2").style.display = "none";
+		  document.getElementById("Logo3").style.display = "block";
 		} else {
 			document.getElementById("Mobile1").style.display = "none";
 			document.getElementById("Laptop1").style.display = "block";
 		  document.getElementById("fx1").style.marginTop = "100px";
 		  document.getElementById("Mobile2").style.display = "none";
 		  document.getElementById("Laptop2").style.display = "inline-block";
+
+		  document.getElementById("Logo2").style.display = "block";
+		  document.getElementById("Logo3").style.display = "none";
 		}
 		document.getElementById('hola').innerHTML = window.innerWidth;
 	  }
@@ -118,7 +124,8 @@ transition: 1s ease;
             <div class="main_menu" id="mainNav">
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container box_1620">
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo2.png" style="height: 60px;" alt=""></a>
+						<a id="Logo2" class="navbar-brand logo_h" href="index.html" style="display: none;"><img src="img/logo2.png" style="height: 60px;" alt=""></a>
+						<a id="Logo3" class="navbar-brand logo_h" href="index.html" style="display: none;"><img src="img/logo3.png" style="height: 60px;" alt=""></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
