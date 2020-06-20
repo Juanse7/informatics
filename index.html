@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+		<title>Juan Duran</title>
+		
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="animate_css/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="animate_css/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="animate_css/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="animate_css/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="animate_css/animate-css/animate.css">
+		<link rel="stylesheet" href="animate_css/flaticon/flaticon.css">
+		
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+
+		<style>
+			.shrink img {
+transition: 1s ease;
+}
+
+.shrink img:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
+
+.ho1:hover{
+	background-color: rgb(189, 189, 189);
+}
+
+.ho1{
+	background-color: white;
+}
+
+
+
+.link-container a {
+    display: block;
+    background: #E9ECF9;
+    height: 100%;
+    text-align: center;
+  }
+
+  .link-container a:hover {
+    background: #D0F29B;
+  }
+		</style>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			
+			$(document).ready(function(){
+				document.getElementById('mainc').click();
+				
+				$("a").on('click', function(event) {
+					if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						window.location.hash = hash;
+					});
+					}
+				});
+
+			
+
+			});
+		</script>
+
+<script type="text/javascript">
+
+
+
+	window.onresize = resize;
+	function resize()
+	  {
+		var x = document.getElementById("Mobile1");
+		var x2 = document.getElementById("Laptop1");
+		if( window.innerWidth <= 900 ) {
+		  x.style.display = "block";
+		  x2.style.display = "none";
+		  document.getElementById("fx1").style.marginTop = "70px";
+		} else {
+		  x.style.display = "none";
+		  x2.style.display = "block";
+		  document.getElementById("fx1").style.marginTop = "100px";
+		}
+		document.getElementById('hola').innerHTML = window.innerWidth;
+	  }
+	
+	  window.onload = resize;
+	
+	
+	</script>
+		
+
+    </head>
+    <body style="background-color: gray;">
+        
+        <header class="header_area" style="background-color: white; border-bottom: 5px solid rgb(58, 145, 221); ;">
+            <div class="main_menu" id="mainNav">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo2.png" style="height: 60px;" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#projects1">Projects</a></li>
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="#cert1">Certifications</a></li>
+										<li class="nav-item"><a class="nav-link" href="#contact1">Timeline</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+		</header>
+		
+		<section id="fx1" style="margin-bottom: 0px; margin-top: 100px;">
+			<div class="container" style="position: relative; padding: 20px; height: 100%; padding-top: 0; padding-bottom: 0; background-color: white;padding-top: 20px;">
+				<img src="img/brand/laptop.jpg" style="width: 100%; bottom: 0px;">
+				
+				<div id="Laptop1" style="background-color: rgb(58, 145, 221); opacity: 0.9; width: 270px; height: 80px; 
+					position: absolute; top:50%; left: 50%; transform: translate(-50%, -110%); border-radius: 10px; text-align: center;">
+					<div style="color: white; height: 100%; display: flex; align-items: center; justify-content: center;">
+							<div>
+								<h3 style="padding: 0; margin-bottom: 0px;">You dream, we create</h2>
+								<p style="padding: 0; margin-bottom: 0px;">Bring your ideas to life!</p>
+							</div>
+					</div>
+
+			</div>
+			<div id="Mobile1" style="background-color: rgb(58, 145, 221); opacity: 0.9; color: white; padding:6px;">
+				<span style="font-weight: bolder;">You dream, we create. </span><span>Bring your ideas to life!</span>
+			</div>
+		</section>
+
+
+        <section id="about1" class="welcome_area p_120" style="padding-top: 30px; padding-top: 0px; padding-bottom: 0px;">
+        	<div class="container" style="background-color: white; padding-top: 30px;padding-bottom: 30px;">
+        		<div class="row">
+
+					<div id="try1" class="col-lg-6" style="padding-left: 40px;">
+        				<div class="welcome_text" style="margin-top: 0px;">
+        					<h4>How can we help?</h4>
+        					<p style="margin-bottom: 5px;">We create systems to help you manage your business. There is no need for you to pay online membership subscriptions or buy expensive branded software. <span style="color:gray; font-weight: bolder;">Why don’t you create your own?</span></p>
+							<p style="margin-bottom: 5px;">With Tailored Programming, there are no hidden fees. You pay as you go. Programming is dynamic, so that you can see results within the first week. You can also request a <span style="color:gray; font-weight: bolder;">free trial</span> to get started with your own system.</p>
+							<p style="margin-bottom: 5px;"></p>
+							<br>
+							<img src="img/desk2.png" style="border:3px solid gray; border-radius: 5px; max-width: 320px;">
+						</div>
+					</div>
+        			
+					<div class="col-lg-6">
+						
+        				<div class="tools_expert" style="padding: 0px;">
+
+							<div style="margin-bottom: 12px;" class="col-md-12" onClick="window.open('https://github.com/juanduranc/resume-cv/blob/master/JuanDuran_Diploma.png','_newtab');">
+								<div class="wel_item link-container" style="overflow:hidden; position: relative; width: 100%; border-width: 3px; padding: 16px;">
+									<!-- <a style="width: 100%; height: auto; min-height: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left; background-color: whitesmoke;">
+										 -->
+										<table style="width:100%; margin: 0;">
+											<tr>
+												<td rowspan="2"><img src="img/professions/analyticsicon2.png" style="border-radius: 5px; max-width: 70px; margin: 10px; padding: 8px;"></td>
+												<td><b style="color: black;">Business Analytics</b></td>
+											</tr>
+											<tr>
+												<td style="line-height: 18px;">Improve your business management experience by creating reports and charts designed for decision making. The right KPIs, business insights, and forecasts can help you save time and money.</td>
+											</tr>
+										</table>
+									<!-- </a> -->
+								</div>
+							</div>
+
+							<div style="margin-bottom: 12px;" class="col-md-12" onClick="window.open('https://github.com/juanduranc/resume-cv/blob/master/JuanDuran_Diploma.png','_newtab');">
+								<div class="wel_item link-container" style="overflow:hidden; position: relative; width: 100%; border-width: 3px; padding: 16px;">
+									<!-- <a style="height: 100%; width: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left; background-color: whitesmoke;">
+										 -->
+										<table style="width:100%; margin: 0;">
+											<tr>
+												<td rowspan="2"><img src="img/professions/softwareicon.png" style="border-radius: 5px; max-width: 70px; margin: 10px;"></td>
+												<td><b style="color: black;">Software Developer</b></td>
+											</tr>
+											<tr>
+												<td style="line-height: 18px;">Design data models tailored to your business, map your business processes, and create software solutions to help you manage your business.</td>
+											</tr>
+										</table>
+									<!-- </a> -->
+								</div>
+							</div>
+
+							<div style="margin-bottom: 12px;" class="col-md-12" onClick="window.open('https://github.com/juanduranc/resume-cv/blob/master/JuanDuran_Diploma.png','_newtab');">
+								<div class="wel_item link-container" style="overflow:hidden; position: relative; width: 100%; border-width: 3px; padding: 16px;">
+									<!-- <a style="height: 100%; width: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left; background-color: whitesmoke;">
+										 -->
+										<table style="width:100%; margin: 0;">
+											<tr>
+												<td rowspan="2"><img src="img/professions/industrialicon.png" style="border-radius: 5px; max-width: 70px; margin: 10px;"></td>
+												<td><b style="color: black;">Industrial Engineer</b></td>
+											</tr>
+											<tr>
+												<td style="line-height: 18px;">Help your business save money by monitoring the quality of products, and supervising inventory security. Optimize your business processes.</td>
+											</tr>
+										</table>
+									<!-- </a> -->
+								</div>
+							</div>
+
+							<div style="margin-bottom: 12px;" class="col-md-12" onClick="window.open('https://github.com/juanduranc/resume-cv/blob/master/JuanDuran_Diploma.png','_newtab');">
+								<div class="wel_item link-container" style="overflow:hidden; position: relative; width: 100%; border-width: 3px; padding: 16px;">
+									<!-- <a style="height: 100%; width: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left; background-color: whitesmoke;">
+										 -->
+										<table style="width:100%; margin: 0;">
+											<tr>
+												<td rowspan="2"><img src="img/professions/cloudicon.png" style="border-radius: 5px; max-width: 70px; margin: 10px;"></td>
+												<td><b style="color: black;">Cloud Computing</b></td>
+											</tr>
+											<tr>
+												<td style="line-height: 18px;">Data engineering and cloud computing. Move your computers, software, and network to the cloud, helping you save money on energy bills and more.</td>
+											</tr>
+										</table>
+									<!-- </a> -->
+								</div>
+							</div>
+
+        
+        				</div>
+					</div>
+					
+					
+        			
+        		</div>
+        	</div>
+		</section>
+
+		<section id="wf" class="projects_area p_120" style="padding-bottom: 0px; margin-top: 1px; padding-top: 0px; padding-bottom: 0px;">
+			<div class="container" style="text-align: center;background-color:rgb(211, 234, 255); padding-top: 30px; padding-bottom: 50px;">
+				<div class="main_title" style="margin-bottom: 60px;">
+					<h2>Tailoring Your Business</h2>
+				</div>
+				<div>
+					<img src="img/tailoring.png" style="border-radius: 5px; width: 100%; max-width: 750px; display:inline-block;margin:0 5px;">
+				</div>
+				
+			</div>
+		</section>
+
+		<section id="bic" class="projects_area p_120" style="padding-bottom: 0px; padding-top: 0px; margin-bottom: 0px; margin-top: 1px;">
+			<div class="container" style="text-align: center;background-color:white; padding-top: 30px; padding-bottom: 50px;">
+				<div class="main_title" style="margin-bottom: 10px;">
+					<h2>creating your solution</h2>
+				</div>
+				<img src="img/bdlc.png" style="border-radius: 5px; max-width: 500px; width: 100%;display:inline-block;margin:0 5px;">
+				<div id="contact1" ></div>
+			</div>
+		</section>
+		
+
+		<section style="overflow: hidden; padding-top: 0px; padding-bottom:0px; margin-bottom: 0px; margin-top: 1px;">
+			<div class="container" style="background-color: rgb(211, 234, 255); padding-top: 30px; padding-bottom: 50px;">
+				<div class="main_title" style="margin-bottom: 20px;">
+					<h2>Contact Information</h2>
+				</div>
+
+				<div id="outer" style="width: 100%; text-align: center;">  
+					
+					<div style="display: inline-block; background-color: honeydew; padding: 12px; border-radius: 10px; border: 1px solid gray;">
+							<h3 style="color: black;">Juan S. Duran</h3>
+							<h5>Business Analyst & Industrial Engineer</h5>
+							<ul class="list basic_info">
+							<li><a href="telf:3463361634" style="color: black;"><i class="lnr lnr-phone-handset"></i> (346) 336 1634</a></li>
+							<li><a href="#" style="color: black;"><i class="lnr lnr-home"></i> Houston, Texas</a></li>
+								<li><a href="https://twitter.com/JuanDur02120813" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+								<li><a href="https://www.linkedin.com/in/duran-juan" target="_blank"><i class="fa fa-linkedin"> Linkedin</i></a></li>
+								<li><a href="https://github.com/juanduranc" target="_blank">Github</a></li>
+								<li><a href="mailto: juan.duran.info@gmail.com" style="color: black;"><i class="lnr lnr-envelope"></i> juan.duran.info@gmail.com</a></li>
+							</ul>
+					</div>
+					
+					<div style="display: inline-block; padding: 14px; vertical-align:top; border-radius: 10px;">
+						<!-- <div style="background-color: red; top:0; pad: 2px;"> -->
+						<img src="img/banner/mainpic.jpg" style="height: 200px; border-radius: 10px;">
+					<!-- </div> -->
+					</div>
+
+				</div>
+
+
+			</div>
+
+			
+
+	</section>
+
+		<section id="degreesandresume" class="projects_area p_120" style="margin-top: 0px; margin-bottom: 0; padding-top: 0px; padding-bottom: 0px;">
+			<div class="container" style="background-color: rgb(211, 234, 255); padding-bottom: 30px;">
+				<div class="main_title" style="margin-bottom: 5px;">
+					<h2>Education & Experience</h2>
+					<p>Click to view document</p>
+				</div>
+				<div class="row welcome_inner">
+					
+						
+					<div class="col-md-4" style="display: flex; margin-bottom: 5px;" onClick="window.open('https://github.com/juanduranc/resume-cv/blob/master/JuanDuran_Diploma.png','_newtab');">
+						<div class="wel_item link-container ho1" style="overflow: hidden; position: relative; width: 100%; border-width: 3px; padding-top: 16px; padding-bottom: 16px; padding-left: 6px;">
+							<!-- <a style="height: 100%; width: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left;"> -->
+								<table style="width:100%; margin: 0;">
+									<tr>
+										<td rowspan="2"><img src="img/lsulogo.png" style="border-radius: 5px; max-width: 80px;"></td>
+										<td><b style="color: black;">2011 - 2015</b></td>
+									</tr>
+									<tr>
+										<td style="line-height: 18px;"><b style="color: black;">Bachelor of Science in<br>Industrial Engineering</b></td>
+									</tr>
+								</table>
+							<!-- </a> -->
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="wel_item link-container ho1" href="#popup1" style="overflow: hidden; position: relative; width: 100%; border-width: 3px; padding-top: 16px; padding-bottom: 16px; padding-left: 6px;">
+							<!-- <a style="height: 100%; width: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left;"> -->
+								<table style="width:100%; margin: 0;">
+									<tr>
+										<td rowspan="2"><img src="img/hultlogo.png" style="border-radius: 5px; max-width: 80px;"></td>
+										<td><b style="color: black;">2019 - 2020</b></td>
+									</tr>
+									<tr>
+										<td style="line-height: 18px;"><b style="color: black;">Master of Science in<br>Business Analytics</b></td>
+									</tr>
+								</table>
+							<!-- </a> -->
+						</div>
+					</div>
+
+
+					<div class="col-md-4" onClick="window.open('https://github.com/Juanse7/resume/blob/master/JUAN%20DURAN%20RESUME%20MAIN.pdf','_newtab');">
+						<div class="wel_item link-container ho1" style="overflow: hidden; position: relative; width: 100%; border-width: 3px; padding-top: 16px; padding-bottom: 16px; padding-left: 6px;">
+							<!-- <a style="height: 100%; width: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left;"> -->
+								<table id="cert1" style="width:100%; margin: 0;">
+									<tr>
+										<td rowspan="2"><img src="img/resumelogo.png" style="border-radius: 5px; max-width: 56px;"></td>
+										<td><b style="color: black;">Resume</b></td>
+									</tr>
+									<tr>
+										<td style="line-height: 18px;">Experience <br>Education <br>Skills</td>
+									</tr>
+								</table>
+							<!-- </a> -->
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		
+
+		
+
+
+
+
+
+
+
+
+
+		<section class="projects_area p_120" style="margin-top: 1px; padding-top: 0px; padding-bottom: 0px;">
+        	<div class="container" style="width: 100%; background-color: white; padding-top: 30px;">
+        		<div class="main_title" style="margin-bottom: 0px;">
+					<h2>My Certifications</h2>
+					<p>Click to view in official website</p>
+				</div>
+        		<div class="projects_fillter" style="margin-top: 0px;">
+					<ul class="filter list">
+						<li id="mainc" data-filter="*"><a style="font-size: larger;" href="#">All</a></li>
+						<li data-filter=".Python"><a style="font-size: larger;" href="#">Python</a></li>
+						<li data-filter=".Rp"><a style="font-size: larger;" href="#">R coding</a></li>
+						<li data-filter=".SQL"><a style="font-size: larger;" href="#">SQL</a></li>
+						<li data-filter=".Structures"><a style="font-size: larger;" href="#">Structures</a></li>
+					</ul>
+				</div>
+				<div class="projects_inner row" style="width: 100%;">
+					<div class="col-md-4 Structures Main" style="padding:2px; width: 340px; overflow: hidden;" onClick="window.open('https://www.udemy.com/certificate/UC-PAPE94ME/','_newtab');">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/software_architecture.JPG" alt="">
+							<div class="projects_text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 SQL" style="padding:2px; width: 340px; overflow: hidden;" onClick="window.open('https://www.datacamp.com/statement-of-accomplishment/course/d52590620d12eb346cd6f7c42110568e9acbc47d','_newtab');">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/sql_intro.JPG" alt="">
+							<div class="projects_text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 SQL Main" style="padding:2px; width: 340px; overflow: hidden;" onClick="window.open('https://www.datacamp.com/statement-of-accomplishment/course/367a7b8789a2507b6826107dee2d9a37014be831?share=true','_newtab');">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/sql_intermediate.jpg" alt="">
+							<div class="projects_text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 SQL" style="padding:2px; width: 340px; overflow: hidden;" onClick="window.open('https://www.datacamp.com/statement-of-accomplishment/course/3a72f65e6e9f5cd95e57f950d050551b7c7dabaa?share=true','_newtab');">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/sql_joining.jpg" alt="">
+							<div class="projects_text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 Python Main" style="padding:2px; width: 340px; overflow: hidden;" onClick="window.open('https://www.datacamp.com/statement-of-accomplishment/course/5c9b68405357056533d26acf685f918026c81174','_newtab');">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/python_machine_learning.JPG" alt="">
+							<div class="projects_text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 Python Main" style="padding:2px; width: 340px; overflow: hidden;" onClick="window.open('https://www.datacamp.com/statement-of-accomplishment/track/527a3dc8d592276914ea750eaced9c405513be5d','_newtab');">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/python_programming.JPG" alt="">
+							<div class="projects_text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 Python" style="padding:2px; width: 340px; overflow: hidden;" onClick="window.open('https://www.datacamp.com/statement-of-accomplishment/course/7454043bf0297729fa7a06131cb51c97730df162','_newtab');">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/python_schoolBudgeting.JPG" alt="">
+							<div class="projects_text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 Rp" style="padding:2px; width: 340px; overflow: hidden;" onClick="window.open('https://www.datacamp.com/statement-of-accomplishment/course/af457313d11fb3013a5c9f7a00c85780ba3711ed','_newtab');">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/r_dashboards.JPG" alt="">
+							<div class="projects_text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 Rp Main" style="padding:2px; width: 340px; overflow: hidden;" onClick="window.open('https://www.datacamp.com/statement-of-accomplishment/track/d7f6ed6dad28e1a64be519282ca933b3f8ebafae','_newtab');">
+						<div class="projects_item">
+							<img class="img-fluid" src="img/projects/r_programming.JPG" alt="">
+							<div class="projects_text">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	
+        
+
+		
+		<section id="projects1" class="projects_area p_120" style="margin-top: 1px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px;">
+			<div class="container" style="padding-left: 30px; padding-right: 30px; padding-top:60px; background-color: white;padding-bottom: 16px; margin-bottom: 0px; ">
+			<div class="container" style="background-color: steelblue; padding-top: 30px;border-radius:10px;">
+				<div class="main_title" style="margin-bottom: 0px;">
+					<h2 style="color: white;">Other Projects</h2>
+					<p style="color: white;">Click to view projects</p>
+				</div>
+				<div class="main_title" style="padding-top: 10px; padding-bottom: 10px; border-radius: 5px; margin-bottom: 0px;">
+					<div class="column shrink" onClick="window.open('https://github.com/juanduranc?utf8=%E2%9C%93&tab=repositories&q=Python&type=&language=','_newtab');">
+						<img src="img/projects/python.png" style="border: solid gray; margin: 8px; border-radius: 30px; max-width: 220px;">
+					</div>
+					<div class="column shrink" onClick="window.open('https://github.com/juanduranc?utf8=%E2%9C%93&tab=repositories&q=R-code&type=&language=','_newtab');">
+						<img src="img/projects/Rlogo.png" style="background-color: white; border: solid gray; margin: 8px; border-radius: 30px;max-width: 100px; padding:20px;">
+					</div>
+					<div class="column shrink" onClick="window.open('https://github.com/juanduranc?utf8=%E2%9C%93&tab=repositories&q=optimization-&type=&language=','_newtab');">
+						<img src="img/projects/optimization.png" style="background-color: white; border: solid gray; margin: 8px; border-radius: 30px; max-width: 220px; padding-top:5px;">
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+
+        
+        <footer class="footer_area p_120" style="padding-top: 5px; padding-bottom: 5px; background-color: white; margin-top: 10px;">
+        	<div class="container">
+        		<div class="row">
+						<div class="col-lg-6">
+							<ul class="list">
+        						<p><b>Connect with Juan:</b><br>Click on the following links</p>
+								<li><a href="https://www.facebook.com/juansebastian.duran.37" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+								<li><a href="https://twitter.com/JuanDur02120813" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+								<li><a href="https://www.linkedin.com/in/duran-juan" target="_blank"><i class="fa fa-linkedin"> Linkedin</i></a></li>
+							</ul>
+							<br>
+							<br>
+							<br>
+						</div>
+						<div class="col-lg-6">
+							<p style="position: absolute; bottom: 0;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						</div>
+
+        		</div>
+        	</div>
+        </footer>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="animate_css/lightbox/simpleLightbox.min.js"></script>
+        <script src="animate_css/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="animate_css/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="animate_css/isotope/isotope-min.js"></script>
+        <script src="animate_css/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="animate_css/counter-up/jquery.waypoints.min.js"></script>
+        <script src="animate_css/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+        <script src="js/gmaps.min.js"></script>
+		<script src="js/theme.js"></script>
+		
+    </body>
+</html>
