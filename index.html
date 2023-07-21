@@ -20,23 +20,34 @@
 
 
 
-
+			// 767
 			if (window.innerWidth <= 767) {
 				
 				document.getElementById("Mobile1").style.display = "block";
 				document.getElementById("Mobile2").style.display = "block";
 				document.getElementById("Mobile3").style.display = "block";
+
 				document.getElementById("Laptop3").style.display = "none";
 				document.getElementById("Laptop2").style.display = "none";
 				document.getElementById("Laptop1").style.display = "none";
 
 			} else {
-				document.getElementById("Mobile3").style.display = "none";
-				document.getElementById("Laptop3").style.display = "block";
 				document.getElementById("Mobile1").style.display = "none";
+				document.getElementById("Mobile2").style.display = "none";
+				document.getElementById("Mobile3").style.display = "none";
+				
+				
 				document.getElementById("Laptop1").style.display = "block";
 				document.getElementById("Laptop2").style.display = "inline-block";
-				document.getElementById("Mobile2").style.display = "none";
+				document.getElementById("Laptop3").style.display = "block";
+			}
+
+			if (window.innerWidth <= 1050) {
+				document.getElementById("img1").style.display = "block";
+				document.getElementById("img2").style.display = "none";
+			} else{
+				document.getElementById("img1").style.display = "none";
+				document.getElementById("img2").style.display = "block";
 			}
 
 			
@@ -56,8 +67,9 @@
 	  <style>
 
 		  html {
-  scroll-behavior: smooth;
-}
+			scroll-behavior: smooth;
+			overflow-x: hidden;
+			}
 		  
 		.wt {
 			background-color: rgb(218, 238, 255);
@@ -70,6 +82,7 @@
 			color: black;
 			margin-bottom: 14px;
 			max-width: 470px;}
+
 
 		.row_alignContent{
 			padding: 20px; background-color: rgb(136, 193, 235); text-align: center; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
@@ -95,36 +108,24 @@
   </head>
 
 
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="position:fixed; top: 0;width: 100%;z-index:999;">
 	<div class="container">
-	<a class="navbar-brand" href="#">Juan Duran</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
+	<a class="navbar-brand" href="#">Juan S. Duran</a>
+
+
+	<div class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<span class="navbar-toggler-icon"></span>
+		</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-left: -150px;">
+		  <a class="dropdown-item" href="#">Home</a>
+		  <a class="dropdown-item" href="#cys">Business Digitalization</a>
+		  <a class="dropdown-item" href="#Contact">Contact Juan</a>
+		</div>
+	  </div>
+
   
-	<div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index:999;">
-	  <ul class="navbar-nav mr-auto">
-		<li class="nav-item active">
-		  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="#"></a>
-		</li>
-		<li class="nav-item dropdown">
-		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Menu
-		  </a>
-		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="#">Home</a>
-			<a class="dropdown-item" href="#Services">Services</a>
-			<a class="dropdown-item" href="#tyb">Programming</a>
-			<a class="dropdown-item" href="#cys">Solutions</a>
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" style="scroll-behavior: smooth; background-color: darkblue; color:white" href="#Contact">Contact</a>
-		  </div>
-		</li>
-	  </ul>
-	</div>
 </div>
   </nav>
 
@@ -140,8 +141,8 @@
 	  <div class="container" style="margin-top: 56px;">
 		<img src="images/laptop1.jpg" style="width: 100%;"/>
 		<div id="Laptop1"
-				style="background-color: rgb(51, 86, 117); opacity: 0.9; width: 240px; height: 80px; 
-					position: absolute; top:50%; left: 50%; transform: translate(-50%, -210%); border-radius: 10px; text-align: center;">
+				style="background-color: rgb(51, 86, 117); opacity: 0.95; width: 240px; height: 80px; 
+					position: absolute; top:300px; left: 50%; transform: translate(-50%, -210%); border-radius: 10px; text-align: center;">
 				<div style="color: white; height: 100%; display: flex; align-items: center; justify-content: center;">
 					
 						<h3 style="padding: 0; margin-bottom: 0px;">Bring your ideas to life!</h2>
@@ -149,7 +150,7 @@
 				</div>
 
 			</div>
-			<div id="Mobile1" style="background-color: rgb(51, 86, 117); color: white; padding:6px;">
+			<div id="Mobile1" style="background-color: rgb(49, 73, 95); color: white; padding:6px;">
 				<span>Bring your ideas to life!</span>
 			</div>
 	  </div>
@@ -158,49 +159,70 @@
 
 	<div class="container" style="padding-top: 20px;">
 		<div class="row">
-
+			
 		<div id="try1" class="col-md-6">
-			<div class="welcome_text" style="margin-top: 0px;">
-				<span style="font-size: xx-large;">How can I help?</span>
-				<p style="margin-bottom: 10px; font-size: large;">I improve business operations using information systems.</p>
+			<div class="welcome_text" style="margin-top: 8px;">
+				<div style="border-bottom: 1px solid rgb(127, 127, 127); padding-bottom: 14px;">
+					<span style="font-size: xx-large; line-height: 1.2;">Looking for job opportunities as a software developer.</span>
+				</div>
+				
+				<!-- <p style="margin-bottom: 10px; font-size: large;">I improve business operations using information systems.</p> -->
 					
-					<p style="color:rgb(58, 145, 221); font-size: large; font-weight: bolder; margin-bottom: 10px;">Participate in designing your own solution</p>
+					<!-- <p style="color:rgb(68, 68, 233); font-size: large; margin-bottom: 10px;margin-top: 16px;line-height: 1.2;">As a developer, I can create complete software solutions that meet your needs.</p> -->
 
-				<p style="margin-bottom: 12px; font-size: large;">I develop and implement web applications. I am currently open for new projects. If you are interested in networking, do not hesitate in contacting me. 
-					Contact Juan to get a <span style="font-weight: bolder;">free consultation.</span></p>
-				<br">
-
-				<img src="images/desk2.png" style="border:1px solid black; border-radius: 5px; max-width: 300px;"><br>
-				Click to call ->
-				<div class="col-md-4" style="background-color: rgb(238, 238, 238); display: inline-block; width: 165px; border-radius: 10px; margin-top: 5px; padding-top: 3px; padding-bottom: 3px; border: 1px solid black; margin-left: 5px;">
-					<a href="tel:+1346-336-1634" style="color: black;"><i class="lnr lnr-phone-handset"></i> (346) 336 1634</a>
-				</div>
+				
 				<br>
-				Click to chat ->
-				<div class="col-md-4" style="background-color: rgb(86, 187, 86); display: inline-block; width: 165px; border-radius: 10px; margin-top: 5px; padding-top: 3px; padding-bottom: 3px; border: 1px solid black;margin-bottom: 10px;">
-					<a href="https://wa.me/+593992333530" style="color: white; font-weight: bold;"><i class="lnr lnr-phone-handset"></i> WhatsApp</a>
-				</div>
+
+				<div>
+					<img id="img1" src="images/desk2.png" style="border:1px solid black; border-radius: 5px; max-width: 300px; margin: 10px;">
+					<img id="img2" src="images/desk2.png" style="border:1px solid black; border-radius: 5px; max-width: 800px; margin: 10px;">
+			
+					<table>
+						<tbody>
+							<tr>
+								<td colspan="2">
+									<p style="margin-bottom: 18px; font-size: large; margin-top: 20px; line-height: 1.2;">
+										Hi, my name is Juan. I am here to develop the software solutions you need.
+										You can contact me to get a 
+										<span style="color: rgb(68, 68, 233);">
+											free consultation.
+										</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+	
+									<div class="wt" style="background-color: white; display: inline-block; border-radius: 10px; padding: 5px;margin: 10px;">
+										<a href="tel:+1346-336-1634" style="color: black;"><i class="lnr lnr-phone-handset"></i>Phone # (346) 336-1634</a>
+									</div>
+									<div class="wt" style="color: black;padding-left: 20px;">Email: juan.duran.info@gmail.com</div>
+	
+								</td>
+								
+							</tr>
+					
+						</tbody>
+					</table>
+
+				</div>				
 			</div>
 		</div>
 
-
+		
 
 
 
 		<div id="Laptop3" class="col-md-6" style="padding-bottom: 20px;">
 
-				<div class="wt">
+				<div class="wt" style="margin-top: 120px;">
 					<table style="width:100%; margin: 0;">
 						<tr>
 							<td rowspan="2"><img src="images/professions/softwareicon.png"
 									style="border-radius: 5px; max-width: 70px; margin: 10px;"></td>
-							<td><b style="color: black;">Software Developer</b></td>
+							<td><b style="color: black;">Frontend Skills</b></td>
 						</tr>
 						<tr>
-							<td style="line-height: 18px;"><b style="color:rgb(58, 145, 221);">Design</b> systems tailored to your business by
-								mappping
-								your business processes, and creating software solutions to help you manage your
-								business.</td>
+							<td style="line-height: 18px;">I can <b style="color:rgb(58, 145, 221);">design</b> and implement interactive web applications using software best practices. Technologies used: React Hooks, TypeScript, Redux, Axios.</td>
 						</tr>
 					</table>
 				</div>
@@ -211,243 +233,100 @@
 							<td rowspan="2"><img src="images/professions/analyticsicon2.png"
 									style="border-radius: 5px; max-width: 50px; margin-left: 16px; margin-right: 20px;">
 							</td>
-							<td><b style="color: black;">Business Analytics</b></td>
+							<td><b style="color: black;">Backend Skills</b></td>
 						</tr>
 						<tr>
-							<td style="line-height: 18px;"><b style="color:rgb(58, 145, 221);">Improve</b> your business management experience by
-								using
-								reports and charts tailored for decision-making, helping you save time & money.</td>
+							<td style="line-height: 18px;">Using <b style="color:rgb(58, 145, 221);">API & Backend</b> technologies, I can create software algorithms to process data. Tehconologies used: Python, JavaScript, NodeJS.</td>
 						</tr>
 					</table>
 				</div>
 
 
-
-
-				//<div class="wt">
-				//	<table style="width:100%; margin: 0;">
-				//		<tr>
-				//			<td rowspan="2"><img src="images/professions/industrialicon.png"
-				//					style="border-radius: 5px; max-width: 70px; margin: 10px;"></td>
-				//			<td><b style="color: black;">Industrial Engineering</b></td>
-				//		</tr>
-				//		<tr>
-				//			<td style="line-height: 18px;"><b style="color:rgb(58, 145, 221);">Optimize</b> your business processes. Help your
-				//				business
-				//				save money by monitoring the quality of products, and supervising inventory
-				//				security.</td>
-				//		</tr>
-				//	</table>
-				//</div>
+				
 
 				<div class="wt">
 					<table style="width:100%; margin: 0;">
 						<tr>
 							<td rowspan="2"><img src="images/professions/cloudicon.png"
 									style="border-radius: 5px; max-width: 70px; margin: 10px;"></td>
-							<td><b style="color: black;">Cloud Computing</b></td>
+							<td><b style="color: black;">Analytics & Engineering</b></td>
 						</tr>
 						<tr>
-							<td style="line-height: 18px;"><b style="color:rgb(58, 145, 221);">Transform</b> your business. Move your
-								computers, software, and network to the cloud, helping you save money on energy
-								bills and more.</td>
+							<td style="line-height: 18px;">Knlowledge on <b style="color:rgb(58, 145, 221);">optimizing</b> business processes. I can help your
+								business save money by developing solutions to track your KPI and set alarms when parameters are not on track.</td>
 						</tr>
 					</table>
-			</div>
+				</div>
+
 
 		</div>
 
-
-
-
-
-
-
-
-
 	</div>
+	
 </div>
 
 
-<div class="row" id="Mobile3" style="padding-top: 34px; border-top: 1px solid gray; background-color: rgb(218, 218, 218); padding-left: 12px; padding-bottom: 20px;">
+<div class="row" id="Mobile3" style="padding-top: 34px; border-top: 1px solid gray; background-color: black; padding-left: 40px; padding-bottom: 20px;">
 
-	<span style="font-size: x-large; padding: 10px; color: black;">Competencies</span>
+	<span style="font-size: x-large; padding: 10px; color: white;">Competencies</span>
+
+
+	<div class="wt" style="margin: 10px; margin-bottom: 5px; border: 1px solid gray; margin-right: 20px; max-width: 340px;">
+		<div style="position: absolute; right: 10px; top: 10px;">
+			<img src="images/professions/softwareicon.png" style="max-width: 40px;"></div>
+		<div style="max-width: 280px;">
+			<b style="color: black;">Frontend Skills</b><br>
+			<div style="line-height: 18px;">I can <b style="color:rgb(58, 145, 221);">design</b> and implement interactive web applications using software best practices. Technologies used: React Hooks, TypeScript, Redux, Axios.</div>
+		</div>
+	</div>
 
 
 	<div class="wt" style="margin: 10px; margin-bottom: 5px; border: 1px solid gray; margin-right: 20px; max-width: 340px;">
 		<div style="position: absolute; right: 10px; top: 10px;">
 			<img src="images/professions/analyticsicon2.png" style="max-width: 40px;"></div>
 		<div style="max-width: 280px;">
-			<b style="color: black;">Business Analytics</b><br>
-			<div style="line-height: 18px;"><b style="color:rgb(58, 145, 221);">Improve</b> your business management experience by
-				using reports and charts tailored for decision-making, helping you save time & money.</div>
+			<b style="color: black;">Backend Skills</b><br>
+			<div style="line-height: 18px;">Using <b style="color:rgb(58, 145, 221);">API & Backend</b> technologies, I can create software algorithms to process data. Tehconologies used: Python, JavaScript, NodeJS.</div>
 		</div>
 	</div>
-	<div class="wt" style="margin: 10px; margin-bottom: 5px; border: 1px solid gray; margin-right: 20px; max-width: 340px;">
-		<div style="position: absolute; right: 10px; top: 10px;">
-			<img src="images/professions/softwareicon.png" style="max-width: 40px;"></div>
-		<div style="max-width: 280px;">
-			<b style="color: black;">Software & Programming</b><br>
-			<div style="line-height: 18px;"><b style="color:rgb(58, 145, 221);">Design</b> systems tailored to your business by mapping
-				your
-				business processes, and creating software solutions to help you manage your
-				business.</div>
-		</div>
-	</div>
-	<div class="wt" style="margin: 10px; margin-bottom: 5px; border: 1px solid gray; margin-right: 20px; max-width: 340px;">
-		<div style="position: absolute; right: 10px; top: 10px;">
-			<img src="images/professions/industrialicon.png" style="max-width: 40px;"></div>
-		<div style="max-width: 280px;">
-			<b style="color: black;">Industrial Engineering</b><br>
-			<div style="line-height: 18px;"><b style="color:rgb(58, 145, 221);">Optimize</b> your business processes. Help your business
-				save
-				money
-				by monitoring the quality of products, and supervising inventory security.</div>
-		</div>
-	</div>
+
 	<div class="wt" style="margin: 10px; margin-bottom: 5px; border: 1px solid gray; margin-right: 20px; max-width: 340px;">
 		<div style="position: absolute; right: 10px; top: 10px;">
 			<img src="images/professions/cloudicon.png" style="max-width: 40px;"></div>
 		<div style="max-width: 280px;">
-			<b style="color: black;">Cloud Computing</b><br>
-			<div style="line-height: 18px;"><b style="color:rgb(58, 145, 221);">Transform</b> your business. Move your
-				computers, software, and network to the cloud, helping you save money on energy
-				bills and more.</div>
+			<b style="color: black;">Analytics & Engineering</b><br>
+			<div style="line-height: 18px;">Knowledge on <b style="color:rgb(58, 145, 221);">optimizing</b> business processes. I can help your
+				business save money by developing solutions to track your KPI and set alarms when parameters are not on track</div>
 		</div>
 	</div>
 </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="Services"></div>
-
 <div style="background-color:white">
 
 
 
 	  <div class="row row_alignContent">
-		<div class="col-md-4 alignedTextBox">Harness the power of cloud computing and save money. I can make your business thrill in the digital era by moving your information systems to a secure, powerful, and scalable cloud platform.</div>
-		<div class="col-md-3" style="padding: 10px; max-width: 300px;"><img src="images/tp1.png" style="bottom: 0px; width: 260px; margin:5px;"/></div>
+		
+		<div class="col-md-4 alignedTextBox"><b>Cloud Computing Skills</b><br/>I can help you harness the power of cloud computing to optmize your business processes. I can make your business thrill in the digital era by moving your information systems to a secure, powerful, and scalable cloud platform.</div>
 		<div class="col-md-3" style="padding: 10px; max-width: 300px;"><img src="images/tp1b.png" style="bottom: 0px; width: 260px; margin:5px;"/></div>
 	  </div>
+	  
 	  <div class="row row_alignContent">
-		<div class="col-md-4 alignedTextBox" style="text-align: left;">Manage your employees in a smart way. Regain control by centralizing key business data and files. By doing so, you will be able to monitor work progress from all employees and communicate new requests in an organized manner. Organized information is at the core of any business success.</div>
-		<div class="col-md-3" style="padding: 10px; max-width: 300px;"><img src="images/tp2.png" style="width: 100%; bottom: 0px; max-width: 260px; margin:10px;"/></div>
-		<div class="col-md-3" style="padding: 10px; max-width: 300px;"><img src="images/tp2b.png" style="width: 100%; bottom: 0px; max-width: 260px; margin:10px;"/></div>
-	  </div>
-	  <div class="row row_alignContent">
-		<div class="col-md-4 alignedTextBox" style="text-align: left;">Optimize the money you invest. Large software businesses have smart sales representatives that will promise you anything just to close a deal. Instead, you can join the smart move and opt into working with me.</div>
-		<div class="col-md-3" style="padding: 10px; max-width: 300px;"><img src="images/tp3.png" style="width: 100%; bottom: 0px; max-width: 260px; margin:10px;"/></div>
-		<div class="col-md-3" style="padding: 10px; max-width: 300px;"><img src="images/tp3b.png" style="width: 100%; bottom: 0px; max-width: 260px; margin:10px;"/></div>
+		<div class="col-md-4 alignedTextBox" style="text-align: left;"><b>Tailored Programming</b><br/>As a detailed software developer, I can create software solutions that match your needs. From astonishing frontend dashboards to efficient backend micro-services, my solutions are tailored to help you succeed in today's competitive market.</div>
+
+		<div class="col-md-3" style="padding: 10px; max-width: 300px;"><img src="images/tp3b.png" style="bottom: 0px; width: 260px; margin:5px;"/></div>
 	  </div>
 	</div>
-<!-- </div> -->
-
 	
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+  
+</body>
 </html>
 
-<!-- <!doctype html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<style>
-
-	</style>
-
-
-
-
-
-</head>
-
-<body>
-
-	<header>
-
-	</header>
-
-
-	<div class="row">
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-		<div class="col-md-1">.col-md-1</div>
-	  </div>
-	  <div class="row">
-		<div class="col-md-8">.col-md-8</div>
-		<div class="col-md-4">.col-md-4</div>
-	  </div>
-	  <div class="row">
-		<div class="col-md-4">.col-md-4</div>
-		<div class="col-md-4">.col-md-4</div>
-		<div class="col-md-4">.col-md-4</div>
-	  </div>
-	  <div class="row">
-		<div class="col-md-6">.col-md-6</div>
-		<div class="col-md-6">.col-md-6</div>
-	  </div>
-	<footer>
-
-	</footer>
-
--->
 
 
 
@@ -482,41 +361,6 @@ style="padding-bottom: 0px; padding-top: 0px; margin-bottom: 0px; margin-top: 1p
 	</div>
 
 
-
-
-
-
-
-	<!-- <div style="width: 100%; padding: 10px;text-align: center; background-color: gray;">
-
-		<div id="Laptop2" class="col-md-3" style="background-color: white; width: 100%; display: inline-block; text-align: left; height: 100%;padding: 10px;">
-			<b>Reports & KPIs</b>
-			<div style="line-height: 18px;">Create your personalized built in solution to generate reports
-				relevant to your decision-making process. Easily monitor the health of your business with
-				dashboards and KPIs.</div>
-		</div>
-		<div class="col-md-4"
-			style="background-color: white; width: 100%; display: inline-block; text-align: left; vertical-align: top;">
-			<img src="images/benefits/laptopReport.jpg" style="width: 300px; border-radius: 10px;">
-		</div>
-		<div id="Mobile2a" class="col-md-4"
-			style="background-color: white; width: 100%; display: inline-block; text-align: left; height: 100%;padding: 10px;">
-			<b>Reports & KPIs</b>
-			<div style="line-height: 18px;">Create your personalized built in solution to generate reports
-				relevant to your decision-making process. Easily monitor the health of your business with
-				dashboards and KPIs.</div>
-		</div>
-		<div class="col-md-8"
-			style="width: 100%; border-bottom: 2px solid rgb(223, 223, 223); display: inline-block; height: 25px; margin-bottom: 5px;">
-		</div>
-	</div> -->
-
-
-
-
-
-
-
 	<div style=" width: 100%; padding: 10px;text-align: center; background-color: white;">
 
 		<div id="Laptop2" class="col-md-4"
@@ -545,7 +389,7 @@ style="padding-bottom: 0px; padding-top: 0px; margin-bottom: 0px; margin-top: 1p
 		
 	</div>
 
-
+	<div id="cys"></div>
 
 	<div style=" width: 100%; padding: 10px;text-align: center; background-color: white;">
 
@@ -565,31 +409,7 @@ style="padding-bottom: 0px; padding-top: 0px; margin-bottom: 0px; margin-top: 1p
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="tyb" class="projects_area p_120"
+<!-- <section id="tyb" class="projects_area p_120"
 style="padding-bottom: 0px; margin-top: 1px; padding-top: 0px; padding-bottom: 0px; background-color: rgb(211, 234, 255)">
 <div class="container"
 	style="text-align: center;background-color:rgb(211, 234, 255); padding-top: 30px; padding-bottom: 50px;">
@@ -602,29 +422,26 @@ style="padding-bottom: 0px; margin-top: 1px; padding-top: 0px; padding-bottom: 0
 	</div>
 
 </div>
-</section>
+</section> -->
 
-<section id="cys" class="projects_area p_120"
-style="padding-bottom: 0px; padding-top: 0px; margin-bottom: 0px; background-color: white">
+<section class="projects_area p_120"
+style="padding-bottom: 0px; padding-top: 0px; margin-bottom: 0px; background-color: rgb(211, 234, 255)">
 <div class="container"
-	style="text-align: center;background-color:white; padding-top: 30px; padding-bottom: 50px;">
+	style="text-align: center;background-color:rgb(211, 234, 255); padding-top: 30px; padding-bottom: 50px;">
 	<div class="main_title" style="margin-bottom: 10px;">
-		<h2>Creating Your Solution</h2>
+		<h2>Business Digitalization</h2>
 	</div>
+	
 	<img src="images/bdlc.png"
 		style="border-radius: 5px; max-width: 500px; width: 100%;display:inline-block;margin:0 5px;">
-	<div id="contact1"></div>
+	<div id="Contact"></div>
 </div>
 </section>
 
 
 
-
-
-
-
-<section id="Contact" style="overflow: hidden; padding-top: 0px; padding-bottom:0px; margin-bottom: 0px; background-color: rgb(211, 234, 255);">
-<div class="container" style="background-color: rgb(211, 234, 255); padding-top: 30px; padding-bottom: 50px;">
+<section style="overflow: hidden; padding-top: 0px; padding-bottom:0px; margin-bottom: 0px; background-color: white;">
+<div class="container" style="background-color: white; padding-top: 30px; padding-bottom: 50px;">
 	<div class="main_title" style="margin-bottom: 20px; width: 100%; text-align: center;">
 		<h2>Contact Information</h2>
 	</div>
@@ -635,22 +452,17 @@ style="padding-bottom: 0px; padding-top: 0px; margin-bottom: 0px; background-col
 			style="display: inline-block; background-color: honeydew; padding: 12px; border-radius: 10px; border: 1px solid gray;">
 			<h3 style="color: black;">Juan S. Duran</h3>
 			<h5>Business Analyst & Industrial Engineer</h5>
-			<ul class="list basic_info">
-				<li><a href="telf:3463361634" style="color: black;"><i class="lnr lnr-phone-handset"></i> (346)
-						336 1634</a></li>
-				<li><a href="#" style="color: black;"><i class="lnr lnr-home"></i> Houston, Texas</a></li>
-				<li><a href="https://twitter.com/JuanDur02120813" target="_blank"><i class="fa fa-twitter"></i>
-						Twitter</a></li>
-				<li><a href="https://www.linkedin.com/in/duran-juan" target="_blank"><i class="fa fa-linkedin">
-							Linkedin</i></a></li>
+			<ul class="list basic_info" style="list-style: none;">
+				<li><a href="telf:3463361634" style="color: black;"><i class="lnr lnr-phone-handset"></i> (346) 336 1634</a></li>
+				<li><a href="#" style="color: black;"><i class="lnr lnr-home"></i> Miami, Florida</a></li>
+				<li><a href="https://twitter.com/JuanDur02120813" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></li>
+				<li><a href="https://www.linkedin.com/in/juan-duran-info" target="_blank"><i class="fa fa-linkedin">Linkedin</i></a></li>
 				<li><a href="https://github.com/juanduranc" target="_blank">Github</a></li>
-				<li><a href="mailto: juan.duran.info@gmail.com" style="color: black;"><i
-							class="lnr lnr-envelope"></i> juan.duran.info@gmail.com</a></li>
+				<li><a href="mailto: juan.duran.info@gmail.com" style="color: black;"><i class="lnr lnr-envelope"></i> juan.duran.info@gmail.com</a></li>
 			</ul>
 		</div>
 
 		<div style="display: inline-block; padding: 14px; vertical-align:top; border-radius: 10px;">
-			<!-- <div style="background-color: red; top:0; pad: 2px;"> -->
 			<img src="images/banner/mainpic.jpg" style="height: 200px; border-radius: 10px;">
 			<!-- </div> -->
 		</div>
@@ -678,7 +490,6 @@ style="margin-top: 0px; margin-bottom: 0; padding-top: 0px; padding-bottom: 0px;
 		<div class="col-md-4" style="min-width: 200px; background-color:white; display: flex; margin: 10px;">
 			<div class="wel_item link-container ho1"
 				style="overflow: hidden; position: relative; width: 100%; border-width: 3px; padding-top: 16px; padding-bottom: 16px; padding-left: 6px;">
-				<!-- <a style="height: 100%; width: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left;"> -->
 				<table style="width:100%; margin: 0;">
 					<tr>
 						<td rowspan="2"><img src="images/lsulogo.png" style="border-radius: 5px; max-width: 80px;">
@@ -690,14 +501,12 @@ style="margin-top: 0px; margin-bottom: 0; padding-top: 0px; padding-bottom: 0px;
 								in<br>Industrial Engineering</b></td>
 					</tr>
 				</table>
-				<!-- </a> -->
 			</div>
 		</div>
 
 		<div class="col-md-4" style="min-width: 200px; background-color: white; margin:10px;">
 			<div class="wel_item link-container ho1" href="#popup1"
 				style="overflow: hidden; position: relative; width: 100%; border-width: 3px; padding-top: 16px; padding-bottom: 16px; padding-left: 6px;">
-				<!-- <a style="height: 100%; width: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left;"> -->
 				<table style="width:100%; margin: 0;">
 					<tr>
 						<td rowspan="2"><img src="images/hultlogo.png"
@@ -709,16 +518,14 @@ style="margin-top: 0px; margin-bottom: 0; padding-top: 0px; padding-bottom: 0px;
 								Analytics</b></td>
 					</tr>
 				</table>
-				<!-- </a> -->
 			</div>
 		</div>
 
 
 		<div class="col-md-3"  style="min-width: 200px; background-color: white; margin:10px;"
-			onClick="window.open('https://github.com/juanduranc/resume-cv/blob/master/JUAN%20DURAN%20resume.pdf','_newtab');">
+			onClick="window.open('https://github.com/juanduranc/resume-cv/blob/master/Resume%20-%20Juan%20Duran%20-%20Developer.pdf','_newtab');">
 			<div class="wel_item link-container ho1"
 				style="overflow: hidden; position: relative; width: 100%; border-width: 3px; padding-top: 16px; padding-bottom: 16px; padding-left: 6px;">
-				<!-- <a style="height: 100%; width: 100%; position: absolute; right: 0; top: 0; padding: 10px; text-align: left;"> -->
 				<table id="cert1" style="width:100%; margin: 0;">
 					<tr>
 						<td rowspan="2">
@@ -727,13 +534,12 @@ style="margin-top: 0px; margin-bottom: 0; padding-top: 0px; padding-bottom: 0px;
 							</div>
 
 						</td>
-						<td><b style="color: black;">Resume</b></td>
+						<td><b style="color: black;"></td>
 					</tr>
 					<tr>
-						<td style="line-height: 18px;">Experience <br>Education <br>Skills</td>
+						<td style="line-height: 18px; color: blue; font-size: large;">Click to view resume</td>
 					</tr>
 				</table>
-				<!-- </a> -->
 			</div>
 		</div>
 
@@ -742,80 +548,5 @@ style="margin-top: 0px; margin-bottom: 0; padding-top: 0px; padding-bottom: 0px;
 	</div>
 </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
